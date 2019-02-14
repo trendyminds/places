@@ -25,7 +25,7 @@ class Settings extends Model
     // Public Properties
     // =========================================================================
 
-    public $googleMapsKey = '';
+    public $googleMapsKey = "";
 
     // Public Methods
     // =========================================================================
@@ -36,8 +36,14 @@ class Settings extends Model
     public function rules()
     {
         return [
+            ['googleMapsKey', 'required'],
             ['googleMapsKey', 'string'],
-            ['googleMapsKey', 'default', 'value' => '']
+            ['googleMapsKey', 'default', 'value' => ''],
         ];
+    }
+
+    public function getKey(): string
+    {
+        return Craft::parseEnv($this->googleMapsKey);
     }
 }

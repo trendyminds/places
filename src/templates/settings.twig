@@ -15,11 +15,14 @@
 
 {% import "_includes/forms" as forms %}
 
-{{ forms.textField({
+{{ forms.autosuggestField({
     first: true,
     label: 'Google Maps Key',
     instructions: "To use Places you must first provide a Google Maps API key that has access to both the <strong>Places API</strong> and <strong>Geocoding API</strong>",
     id: 'googleMapsKey',
     name: 'googleMapsKey',
-    value: settings['googleMapsKey']})
+    required: true,
+    value: settings['googleMapsKey'],
+    suggestEnvVars: true
+  })
 }}

@@ -15,6 +15,7 @@ use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
 
 use trendyminds\places\Places;
+use trendyminds\places\models\Settings;
 
 /**
  * @author    TrendyMinds
@@ -32,7 +33,7 @@ class PlacesAsset extends AssetBundle
     public function init()
     {
         $this->sourcePath = "@trendyminds/places/assetbundles/places";
-        $key = Places::$plugin->settings->googleMapsKey;
+        $key = Places::$plugin->settings->getKey();
 
         $this->depends = [
             CpAsset::class,
