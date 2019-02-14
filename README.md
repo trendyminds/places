@@ -1,8 +1,8 @@
-# Places plugin for Craft CMS 3.x
+# 🗺 Places
 
 Geocode your content using Google's Place Autocomplete field
 
-![Screenshot](resources/img/plugin-logo.png)
+![Screenshot](resources/img/demo.gif)
 
 ## Requirements
 
@@ -21,26 +21,6 @@ To install the plugin, follow these instructions.
         composer require trendyminds/places
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Places.
-
-## Places Overview
-
--Insert text here-
-
-## Configuring Places
-
--Insert text here-
-
-## Using Places
-
--Insert text here-
-
-## Places Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
-
-Brought to you by [TrendyMinds](https://trendyminds.com)
 
 ## Attribution
 [Pin marker by Iconnic from the Noun Project](https://thenounproject.com/search/?q=pin&i=2207989)
