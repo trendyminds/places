@@ -1,4 +1,4 @@
-# 🗺 Places
+# <img src="src/icon.svg" width="25" alt="Places icon"> Places
 
 Geocode your content using Google's Place Autocomplete field
 
