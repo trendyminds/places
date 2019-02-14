@@ -1,6 +1,6 @@
 {
     "name": "trendyminds/places",
-    "description": "Geocode your content using Google's Place Autocomplete field ",
+    "description": "Geocode your content using Google's Place Autocomplete field",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [

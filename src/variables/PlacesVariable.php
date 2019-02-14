@@ -11,6 +11,7 @@
 namespace trendyminds\places\variables;
 
 use trendyminds\places\Places;
+use trendyminds\places\models\PlacesModel;
 
 use Craft;
 
