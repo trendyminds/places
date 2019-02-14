@@ -1,0 +1,43 @@
+{
+    "name": "trendyminds/places",
+    "description": "Geocode your content using Google's Place Autocomplete field ",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "places"
+    ],
+    "support": {
+        "docs": "https://github.com/trendyminds/places/blob/master/README.md",
+        "issues": "https://github.com/trendyminds/places/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrendyMinds",
+            "homepage": "https://trendyminds.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "trendyminds\\places\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Places",
+        "handle": "places",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/trendyminds/places/master/CHANGELOG.md",
+        "components": {
+            "placesService": "trendyminds\\places\\services\\PlacesService"
+        },
+        "class": "trendyminds\\places\\Places"
+    }
+}
