@@ -41,5 +41,14 @@ To install the plugin, follow these instructions.
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Places.
 
+## Contributing
+
+We welcome anyone and everyone who would like to improve Places to fork it and send in pull requests. To start developing Places:
+
+0. Ensure you have Node version 10.x running on your machine
+1. Clone the repo to your computer
+2. Run `npm i`
+3. Run `npm start` to compile the CSS and JS in the main `src/resources/` directory
+
 ## Attribution
 [Pin marker by Iconnic from the Noun Project](https://thenounproject.com/search/?q=pin&i=2207989)
