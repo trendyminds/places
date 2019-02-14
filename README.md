@@ -2,7 +2,7 @@
 
 Geocode your content using Google's Place Autocomplete field
 
-![Screenshot](resources/img/demo-shot.gif)
+![Screenshot](resources/img/demo-loop.gif)
 
 ## Requirements
 
