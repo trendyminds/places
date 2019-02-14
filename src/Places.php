@@ -13,6 +13,7 @@ namespace trendyminds\places;
 use trendyminds\places\services\PlacesService as PlacesServiceService;
 use trendyminds\places\models\Settings;
 use trendyminds\places\fields\PlacesField as PlacesFieldField;
+use trendyminds\places\variables\PlacesVariable;
 
 use Craft;
 use craft\base\Plugin;
@@ -20,6 +21,7 @@ use craft\services\Plugins;
 use craft\events\PluginEvent;
 use craft\web\UrlManager;
 use craft\services\Fields;
+use craft\helpers\UrlHelper;
 use craft\web\twig\variables\CraftVariable;
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterUrlRulesEvent;
@@ -89,6 +91,20 @@ class Places extends Plugin
                 ['name' => $this->name]
             ),
             __METHOD__
+        );
+
+        Event::on(
+            Plugins::class,
+            Plugins::EVENT_AFTER_INSTALL_PLUGIN,
+            function (PluginEvent $event) {
+                if ($event->plugin === $this) {
+                    $request = Craft::$app->getRequest();
+
+                    if ($request->isCpRequest) {
+                        Craft::$app->getResponse()->redirect(UrlHelper::cpUrl('settings/plugins/places'))->send();
+                    }
+                }
+            }
         );
     }
 
